@@ -4,12 +4,11 @@ import ListSeries from "../components/ListSeries";
 import useFetch from "../hooks/useFetch";
 
 export default function Series() {
-
   const listSeries = useFetch(
     `https://gateway.marvel.com/v1/public/series?ts=1&apikey=237db5ece074cf2b73db8deba3218103&hash=e5c48f9bc3d0c5dd181f918f0a2a4b0d`
   );
-    return (
-      <div>
+  return (
+    <div>
       <div className="series-page">
         <div id="slide-series-image" />
         <Grid>
@@ -22,6 +21,5 @@ export default function Series() {
         </Grid>
       </div>
     </div>
-    );
-  }
-  
+  );
+}
